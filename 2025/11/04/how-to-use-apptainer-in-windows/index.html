@@ -123,7 +123,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://sputnik596.github.io/2025/10/10/hello-world/"/>
+    <link rel="canonical" href="https://sputnik596.github.io/2025/11/04/how-to-use-apptainer-in-windows/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -133,16 +133,17 @@
         
         <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://sputnik596.github.io/2025/10/10/hello-world/index.html">
+<meta property="og:title" content="如何在windows下使用apptainer">
+<meta property="og:url" content="https://sputnik596.github.io/2025/11/04/how-to-use-apptainer-in-windows/index.html">
 <meta property="og:site_name" content="SputNik596的自留地">
 <meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://sputnik596.github.io/images/redefine-og.webp">
-<meta property="article:published_time" content="2025-10-10T06:06:11.217Z">
-<meta property="article:modified_time" content="2025-10-10T06:08:58.446Z">
+<meta property="article:published_time" content="2025-11-04T08:21:24.000Z">
+<meta property="article:modified_time" content="2025-11-04T09:19:22.795Z">
 <meta property="article:author" content="SputNik596">
-<meta property="article:tag" content="test">
+<meta property="article:tag" content="apptainer">
+<meta property="article:tag" content="WSL">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://sputnik596.github.io/images/redefine-og.webp">
     
@@ -156,7 +157,7 @@
     
     <title>
         
-            Hello World | SputNik596的自留地
+            如何在windows下使用apptainer | SputNik596的自留地
         
     </title>
 
@@ -614,7 +615,7 @@
 		<div class="article-title relative w-full">
 			
 			<div class="w-full flex items-center pt-6 justify-start">
-				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">Hello World</h1>
+				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">如何在windows下使用apptainer</h1>
 			</div>
 			
 		</div>
@@ -635,15 +636,15 @@
 					<div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2025-10-10 14:06:11</span>
-        <span class="mobile">2025-10-10 14:06:11</span>
+        <span class="desktop">2025-11-04 16:21:24</span>
+        <span class="mobile">2025-11-04 16:21:24</span>
         <span class="hover-info">创建</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2025-10-10 14:08:58</span>
-            <span class="mobile">2025-10-10 14:08:58</span>
+            <span class="desktop">2025-11-04 17:19:22</span>
+            <span class="mobile">2025-11-04 17:19:22</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -657,7 +658,7 @@
                     
                         
                         <li>
-                            <a href="../../../../categories/test/">test</a>&nbsp;
+                            <a href="../../../../categories/%E5%B8%B8%E7%94%A8%E6%8A%80%E6%9C%AF/">常用技术</a>&nbsp;
                         </li>
                     
                     
@@ -671,7 +672,11 @@
             <ul>
                 
                     <li>
-                        <a href="../../../../tags/test/">test</a>&nbsp;
+                        <a href="../../../../tags/apptainer/">apptainer</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="../../../../tags/WSL/">WSL</a>&nbsp;
                     </li>
                 
             </ul>
@@ -697,19 +702,79 @@
 
 
 		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-			<p>Welcome to <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/" >Hexo<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>! This is your very first post. Check <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/" >documentation<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> or you can ask me on <a class="link"   target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html" >Writing<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/server.html" >Server<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html" >Generating<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html" >Deployment<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+			<p>本文主要介绍如何在Windows下使用apptainer，一般来说apptainer都是在HPC中使用的，而且apptainer并不原生适配Windows，在Windows下使用apptainer只是为了在能够联网的Windows主机上构建容器，然后再部署到集群上。</p>
+<h2 id="一-适用于Linux的Windows子系统-WSL-的安装和使用"><a href="#一-适用于Linux的Windows子系统-WSL-的安装和使用" class="headerlink" title="一. 适用于Linux的Windows子系统(WSL)的安装和使用"></a>一. 适用于Linux的Windows子系统(WSL)的安装和使用</h2><p>WSL是微软开发的一项允许用户在Windows中直接运行Linux环境的技术，可以将Linux子系统直接嵌入Windows中，无需传统虚拟机的设置。该功能在win10和win11上可用。</p>
+<h3 id="1-开启WSL的功能"><a href="#1-开启WSL的功能" class="headerlink" title="1.开启WSL的功能"></a>1.开启WSL的功能</h3><p>win10和win11上开启方法基本相同，在搜索中输入“启用或关闭Windows功能”，然后勾选“虚拟机平台（Virtual Machine Platform）”和“适用于Linux的Windows子系统”，在win11上还需要开启Windows Hypervisor Platform（如果有的话）和Hyper-V，之后重启系统。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="wsl_config.jpg"
+                     
+                ></p>
+<p>重启后，在终端中输入  </p>
+<div class="code-container" data-rel="Powershell"><figure class="iseeu highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl.exe <span class="literal">--update</span></span><br></pre></td></tr></table></figure></div>
+<p>将默认版本设置为wsl2(win11默认为wsl2，<strong>win10需要手动切换</strong>):  </p>
+<div class="code-container" data-rel="Powershell"><figure class="iseeu highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl <span class="literal">--set-defult-version</span> <span class="number">2</span></span><br></pre></td></tr></table></figure></div>
+<h3 id="2-在C盘以外的盘部署Ubuntu"><a href="#2-在C盘以外的盘部署Ubuntu" class="headerlink" title="2.在C盘以外的盘部署Ubuntu"></a>2.在C盘以外的盘部署Ubuntu</h3><p>首先查看可用的发行版</p>
+<div class="code-container" data-rel="Powershell"><figure class="iseeu highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl <span class="literal">--list</span> <span class="literal">--online</span></span><br></pre></td></tr></table></figure></div>
+<p>终端输出</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="wsl_list.jpg"
+                     
+                ></p>
+<p>安装Ubuntu-24.04</p>
+<div class="code-container" data-rel="Powershell"><figure class="iseeu highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl  <span class="literal">--install</span> <span class="literal">-d</span> Ubuntu<span class="literal">-24</span>.<span class="number">04</span></span><br></pre></td></tr></table></figure></div>
+<p>之后会要求你创建一个账户名和密码，创建完毕之后按<code>ctrl+D</code>退出。在<code>D</code>盘或者其他盘下创建一个名为WSL的文件夹，然后再在里面创建名为<code>Ubuntu-24.04</code>的文件夹，之后在终端中导出Ubuntu24.04。</p>
+<div class="code-container" data-rel="Powershell"><figure class="iseeu highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl <span class="literal">--export</span> Ubuntu<span class="literal">-24</span>.<span class="number">04</span> D:\WSL\Ubuntu<span class="literal">-24</span>.<span class="number">04</span>\Ubuntu<span class="literal">-24</span>.<span class="number">04</span>.tar</span><br></pre></td></tr></table></figure></div>
+<p>注销原有的Ubuntu</p>
+<div class="code-container" data-rel="Powershell"><figure class="iseeu highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl <span class="literal">--unregister</span> Ubuntu<span class="literal">-24</span>.<span class="number">04</span></span><br></pre></td></tr></table></figure></div>
+<p>之后导入到<code>D</code>盘相应目录</p>
+<div class="code-container" data-rel="Powershell"><figure class="iseeu highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl <span class="literal">--import</span> Ubuntu<span class="literal">-24</span>.<span class="number">04</span> D:\WSL\Ubuntu<span class="literal">-24</span>.<span class="number">04</span>\ D:\WSL\Ubuntu<span class="literal">-24</span>.<span class="number">04</span>\Ubuntu<span class="literal">-24</span>.<span class="number">04</span>.tar <span class="literal">--version</span> <span class="number">2</span></span><br></pre></td></tr></table></figure></div>
+<p>这样在<code>D:\WSL\Ubuntu-24.04\</code>下面就有一个名为<code>ext4.vhdx</code>的虚拟磁盘映像文件，用于存放Ubuntu系统的所有文件。</p>
+<p>启动Ubuntu-24.04</p>
+<div class="code-container" data-rel="Powershell"><figure class="iseeu highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl <span class="literal">-d</span> Ubuntu<span class="literal">-24</span>.<span class="number">04</span></span><br></pre></td></tr></table></figure></div>
+<h3 id="3-安装Windows-Terminal"><a href="#3-安装Windows-Terminal" class="headerlink" title="3.安装Windows Terminal"></a>3.安装Windows Terminal</h3><p>在微软商店中搜索<strong>Windows Terminal</strong>并安装</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="windows_terminal.jpg"
+                     
+                ></p>
+<p>之后在任何文件夹中右键会显示<strong>在终端中打开</strong>，点击后出现终端界面。<br>在最上方下拉菜单中选择之前安装的<code>Ubuntu-24.04</code>。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="wt.jpg"
+                     
+                ></p>
+<p>之后出现Ubuntu的命令行界面</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="ubuntu.jpg"
+                     
+                ></p>
+<h2 id="二、安装apptainer"><a href="#二、安装apptainer" class="headerlink" title="二、安装apptainer"></a>二、安装apptainer</h2><p>在Ubuntu中运行以下命令</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$sudo</span> add-apt-repository -y ppa:apptainer/ppa</span><br><span class="line"><span class="variable">$sudo</span> apt update</span><br><span class="line"><span class="variable">$sudo</span> apt install -y apptainer</span><br></pre></td></tr></table></figure></div>
+<p>等待一段时间安装，之后输入命令</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$apptainer</span></span><br></pre></td></tr></table></figure></div>
+<p>出现</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="apptainer.jpg"
+                     
+                ></p>
+<p>表明安装成功</p>
+<h2 id="三、如何实现wsl与windows互传"><a href="#三、如何实现wsl与windows互传" class="headerlink" title="三、如何实现wsl与windows互传"></a>三、如何实现wsl与windows互传</h2><p>只要在wsl的Ubuntu中把指定文件复制到<code>/mnt</code>这个路径下的文件夹，例如</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$cp</span> test.txt /mnt/d</span><br></pre></td></tr></table></figure></div>
+<p>就是把<code>test.txt</code>复制到<code>D</code>盘根目录下。</p>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ol>
+<li><a class="link"   target="_blank" rel="noopener" href="https://blog.csdn.net/Natsuago/article/details/145594631" >全网最全Win10&#x2F;11系统下WSL2+Ubuntu20.04的全流程安装指南（两种支持安装至 D 盘方式）<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://deepwiki.com/apptainer/apptainer-admindocs/2.2-windows-and-macos-installation" >Deepwiki apptainer-admindocs&#x2F;2.2-windows-and-macos-installation<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
+</ol>
 
 		</div>
 
@@ -717,18 +782,18 @@
 		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
 			<div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> Hello World</li>
+        <li><strong>标题:</strong> 如何在windows下使用apptainer</li>
         <li><strong>作者:</strong> SputNik596</li>
         <li><strong>创建于
-                :</strong> 2025-10-10 14:06:11</li>
+                :</strong> 2025-11-04 16:21:24</li>
         
             <li>
                 <strong>更新于
-                    :</strong> 2025-10-10 14:08:58
+                    :</strong> 2025-11-04 17:19:22
             </li>
         
         <li>
-            <strong>链接:</strong> https://sputnik596.github.io/2025/10/10/hello-world/
+            <strong>链接:</strong> https://sputnik596.github.io/2025/11/04/how-to-use-apptainer-in-windows/
         </li>
         <li>
             <strong>
@@ -750,7 +815,11 @@
 		<ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
 			
 			<li class="tag-item mx-0.5">
-				<a href="../../../../tags/test/">#test</a>&nbsp;
+				<a href="../../../../tags/apptainer/">#apptainer</a>&nbsp;
+			</li>
+			
+			<li class="tag-item mx-0.5">
+				<a href="../../../../tags/WSL/">#WSL</a>&nbsp;
 			</li>
 			
 		</ul>
@@ -761,18 +830,18 @@
 		
 		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
 			
-			<div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-				<a class="prev" rel="prev" href="../../../11/04/how-to-use-apptainer-in-windows/">
-					<span class="left arrow-icon flex justify-center items-center">
-						<i class="fa-solid fa-chevron-left"></i>
-					</span>
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="../../../10/10/hello-world/">
 					<span class="title flex justify-center items-center">
-						<span class="post-nav-title-item truncate max-w-48">如何在windows下使用apptainer</span>
-						<span class="post-nav-item">上一篇</span>
+						<span class="post-nav-title-item truncate max-w-48">Hello World</span>
+						<span class="post-nav-item">下一篇</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
 					</span>
 				</a>
 			</div>
-			
 			
 		</div>
 		
@@ -827,8 +896,8 @@
 		<div class="post-toc-wrap">
 	<div class="post-toc">
 		<div class="toc-title">目录</div>
-		<div class="page-title">Hello World</div>
-		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol>
+		<div class="page-title">如何在windows下使用apptainer</div>
+		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80-%E9%80%82%E7%94%A8%E4%BA%8ELinux%E7%9A%84Windows%E5%AD%90%E7%B3%BB%E7%BB%9F-WSL-%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8"><span class="nav-text">一. 适用于Linux的Windows子系统(WSL)的安装和使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%BC%80%E5%90%AFWSL%E7%9A%84%E5%8A%9F%E8%83%BD"><span class="nav-text">1.开启WSL的功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%9C%A8C%E7%9B%98%E4%BB%A5%E5%A4%96%E7%9A%84%E7%9B%98%E9%83%A8%E7%BD%B2Ubuntu"><span class="nav-text">2.在C盘以外的盘部署Ubuntu</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%AE%89%E8%A3%85Windows-Terminal"><span class="nav-text">3.安装Windows Terminal</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%AE%89%E8%A3%85apptainer"><span class="nav-text">二、安装apptainer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0wsl%E4%B8%8Ewindows%E4%BA%92%E4%BC%A0"><span class="nav-text">三、如何实现wsl与windows互传</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="nav-text">参考资料</span></a></li></ol>
 
 	</div>
 </div>
